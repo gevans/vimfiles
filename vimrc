@@ -68,6 +68,6 @@ set wrap
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 " Command mappings
-source mappings.vim
+source ~/.vim/mappings.vim
 " Filetype settings
-source ftsettings.vim
+source ~/.vim/ftsettings.vim
