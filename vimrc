@@ -28,7 +28,7 @@ if has("gui_running")
   set guioptions-=T " Disable toolbar
   set co=100 lines=38 " Column/line width & height
 
-  colo wombat
+  colo warm_grey
   " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
   set guifont=Envy\ Code\ R\ 10
 else
