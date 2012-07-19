@@ -47,7 +47,6 @@ endif
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set autoindent
 
 syntax on
 
@@ -67,6 +66,9 @@ set wrap
 
 " Draw ruler
 set colorcolumn=80
+
+" Delete trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous
