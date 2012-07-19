@@ -27,13 +27,15 @@ set nobackup nowb noswapfile
 if has("gui_running")
   set guioptions-=T " Disable toolbar
   set co=100 lines=38 " Column/line width & height
+  set background=light
 
-  colo warm_grey
+  colo solarized
   " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
   set guifont=Envy\ Code\ R\ 10
 else
+  set background=dark
   " Color scheme for terminal editing
-  colo wombat256mod
+  colo solarized
   set t_Co=256
 endif
 
