@@ -65,6 +65,9 @@ set si
 " Wrap lines
 set wrap
 
+" Draw ruler
+set colorcolumn=80
+
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous
 """""""""""""""""""""""""""""""""""""""""""""""""
