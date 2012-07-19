@@ -37,3 +37,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/yaml"]
+	path = bundle/yaml
+	url = git://github.com/vim-scripts/yaml.vim.git
