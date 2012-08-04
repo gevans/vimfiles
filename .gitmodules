@@ -40,3 +40,6 @@
 [submodule "bundle/yaml"]
 	path = bundle/yaml
 	url = git://github.com/vim-scripts/yaml.vim.git
+[submodule "bundle/yard"]
+	path = bundle/yard
+	url = git://github.com/gevans/yard.vim.git
