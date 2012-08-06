@@ -1,0 +1,23 @@
+snippet Fd
+	FactoryGirl.define do
+		$1
+	end
+
+snippet factory
+	factory :${1:model} do
+		${2}
+	end
+
+snippet Fdefc
+	factory :${1:class}, class: ${2:Class} do
+		${3}
+	end
+
+snippet Fb
+	FactoryGirl.build(:${1:model})${2}
+
+snippet Fc
+	FactoryGirl.create(:${1:model})${2}
+
+snippet Fa
+	FactoryGirl.attributes_for(:${1:model})${2}
