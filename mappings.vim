@@ -2,6 +2,9 @@
 " => Command Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""
 
+" Allow scrolling and highlighting in command-line Vim
+set mouse=a
+
 " Map Ctrl-J to PHP arrow operator
 imap <C-j> ->
 
