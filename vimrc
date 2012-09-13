@@ -8,12 +8,11 @@ set nocompatible
 " Deactivate ftdetect temporarily to fix Debian-related bugs with pathogen
 filetype off
 " Activate pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 " Reactivate ftdetect
 filetype plugin indent on
 
-" snipMate.vim author & email settings
+" Set snipMate.vim author & email settings
 let g:snips_author = "Gabriel Evans"
 let g:snips_email  = "gabriel@codeconcoction.com"
 
