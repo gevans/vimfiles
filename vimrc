@@ -1,16 +1,29 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Deactivate ftdetect temporarily for vundle
+filetype off
+
+" Load vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let vundle manage vundle
+Bundle 'gmarik/vundle'
+
+" Load bundled scripts, plugins, and syntaxes
+source ~/.vim/bundle.vim
+
+" Reactivate ftdetect
+filetype plugin indent on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 " Disable Vi compatibility
 set nocompatible
-
-" Deactivate ftdetect temporarily to fix Debian-related bugs with pathogen
-filetype off
-" Activate pathogen
-call pathogen#infect()
-" Reactivate ftdetect
-filetype plugin indent on
 
 " Set snipMate.vim author & email settings
 let g:snips_author = "Gabriel Evans"
