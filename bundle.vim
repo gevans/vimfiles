@@ -12,6 +12,7 @@ Bundle 'yaml.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-cucumber'
+Bundle 'Keithbsmiley/rspec.vim'
 
 " Plugins
 Bundle 'Raimondi/delimitMate'
@@ -21,6 +22,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
+Bundle 'GutenYe/gem.vim'
 
 " Snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'

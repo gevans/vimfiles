@@ -45,7 +45,7 @@ if has("gui_running")
   " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
   set guifont=Envy\ Code\ R\ 10
 else
-  set background=dark
+  set background=light
   " Color scheme for terminal editing
   colo solarized
   set t_Co=256
