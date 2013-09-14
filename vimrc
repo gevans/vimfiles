@@ -26,8 +26,8 @@ filetype plugin indent on
 set nocompatible
 
 " Set snipMate.vim author & email settings
-let g:snips_author = "Gabriel Evans"
-let g:snips_email  = "gabriel@codeconcoction.com"
+let g:snips_author = "Gabe Evans"
+let g:snips_email  = "gabe@ga.be"
 
 " Disable backups
 set nobackup nowb noswapfile
