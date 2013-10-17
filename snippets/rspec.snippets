@@ -38,3 +38,20 @@ snippet it-
 	end
 snippet its
 	its(:${1:attr}) { should${2} }
+snippet feat
+	feature '${1:Growing money on trees}' do
+
+		${2:pending}
+	end
+snippet back
+	background do
+		${1}
+	end
+snippet scen
+	scenario '${2:I forget to water my tree}' do
+		${2:expect(tree).to die}
+	end
+snippet given
+	given(:${1:target}) do
+		${2}
+	end
