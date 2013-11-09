@@ -23,6 +23,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'GutenYe/gem.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'rodjek/vim-puppet'
 
 " Snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'
