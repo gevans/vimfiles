@@ -5,7 +5,10 @@
 " Allow scrolling and highlighting in command-line Vim
 set mouse=a
 
-" Map Ctrl-J to PHP arrow operator
+" Map Ctrl-W to delete previous word (insert mode)
+imap <C-w> <Esc>bdwi
+
+" Map Ctrl-J to arrow operator
 imap <C-j> ->
 
 " Use Ctrl-K to prefix a word with a colon (Ruby symbol)
