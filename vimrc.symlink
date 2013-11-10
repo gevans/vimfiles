@@ -32,9 +32,16 @@ let g:snips_email  = "gabe@ga.be"
 " Disable backups
 set nobackup nowb noswapfile
 
+" Allow backspacing over start of insert
+" See http://vimdoc.sourceforge.net/htmldoc/options.html#'backspace'
+set backspace=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors, fonts, and aethetics
 """""""""""""""""""""""""""""""""""""""""""""""""
+
+" Highlight current line
+set cursorline
 
 if has("gui_running")
   set guioptions-=T " Disable toolbar
@@ -46,7 +53,7 @@ if has("gui_running")
   set guifont=Envy\ Code\ R\ 10
 else
   set background=light
-  " Color scheme for terminal editing
+  let g:solarized_termtrans=1 " Enable color scheme transparency
   colo solarized
   set t_Co=256
 endif
