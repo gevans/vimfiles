@@ -1,14 +1,25 @@
-<?php defined('SYSPATH') or die('Kohana bootstrap needs to be included before tests run');
+<?php
+
+namespace ${1:SomeLibrary}\Tests;
 
 /**
- * Tests ${1:Class}
+ * Tests ${2:SomeClass}
  *
- * @group ${2:application}
- *
- * @package   ${3:Application}
- * @category  Tests
+ * @package  $1
+ * @category Tests
  */
-class ${4:TestCase} extends Unittest_TestCase
-{
-	${5}
-} // End $4
+class $2Test extends ${3:\PHPUnit_Framework_TestCase} {
+
+	protected function setUp()
+	{
+		parent::setUp();
+	}
+
+	protected function tearDown()
+	{
+		parent::tearDown();
+	}
+
+	${0}
+
+} // End $2Test
