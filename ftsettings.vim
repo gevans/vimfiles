@@ -16,8 +16,6 @@ autocmd Filetype javascript setlocal ts=2 sw=2 softtabstop=2 noexpandtab
 " C - 2-space, tabbed
 autocmd Filetype c setlocal ts=2 sw=2 softtabstop=2 noexpandtab
 
-" JSON
-autocmd BufNewFile,BufRead *.json set ft=javascript
-
-" Detect and set RSpec syntax based on filename
+" Set syntaxes for various file extensions and naming conventions
+autocmd BufNewFile,BufRead *.json    set ft=javascript
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
