@@ -19,3 +19,4 @@ autocmd Filetype c setlocal ts=2 sw=2 softtabstop=2 noexpandtab
 " Set syntaxes for various file extensions and naming conventions
 autocmd BufNewFile,BufRead *.json    set ft=javascript
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
+autocmd BufnewFile,BufRead *.slim    set ft=slim
