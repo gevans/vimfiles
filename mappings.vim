@@ -23,3 +23,11 @@ nnoremap <F1> :BufExplorer<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :TlistToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
+
+" thoughtbot/vim-rspec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
