@@ -2,7 +2,7 @@
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-" Deactivate ftdetect temporarily for vundle
+" Deactivate ftdetect temporarily
 filetype off
 
 " Load vundle
@@ -14,6 +14,11 @@ Bundle 'gmarik/vundle'
 
 " Load bundled scripts, plugins, and syntaxes
 source ~/.vim/bundle.vim
+
+" Load golang vim files if $GOROOT is available
+if !empty($GOROOT)
+  set rtp+=$GOROOT/misc/vim/
+end
 
 " Reactivate ftdetect
 filetype plugin indent on
@@ -97,3 +102,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 source ~/.vim/mappings.vim
 " Filetype settings
 source ~/.vim/ftsettings.vim
+
+
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['rspec'] = 'rspec,ruby'
