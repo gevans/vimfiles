@@ -16,7 +16,7 @@ Bundle 'gmarik/vundle'
 source ~/.vim/bundle.vim
 
 " Load golang vim files if $GOROOT is available
-if !empty($GOROOT)
+if !empty('$GOROOT')
   set rtp+=$GOROOT/misc/vim/
 end
 
@@ -29,10 +29,6 @@ filetype plugin indent on
 
 " Disable Vi compatibility
 set nocompatible
-
-" Set snipMate.vim author & email settings
-let g:snips_author = "Gabe Evans"
-let g:snips_email  = "gabe@ga.be"
 
 " Disable backups
 set nobackup nowb noswapfile
@@ -48,20 +44,14 @@ set backspace=2
 " Highlight current line
 set cursorline
 
-if has("gui_running")
-  set guioptions-=T " Disable toolbar
-  set co=100 lines=38 " Column/line width & height
-  set background=light
-
-  colo solarized
-  " http://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released
-  set guifont=Envy\ Code\ R\ 10
+if !empty('$VIM_BACKGROUND')
+  let &background=$VIM_BACKGROUND
 else
-  set background=light
-  let g:solarized_termtrans=1 " Enable color scheme transparency
-  colo solarized
-  set t_Co=256
+  set background=dark
 endif
+let g:solarized_termtrans=1 " Enable color scheme transparency
+colo solarized
+set t_Co=256
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tabs, and indentation
@@ -98,12 +88,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 " => Miscellaneous
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-" Command mappings
-source ~/.vim/mappings.vim
-" Filetype settings
-source ~/.vim/ftsettings.vim
-
+" snipMate.vim
+let g:snips_author = substitute(system('git config user.name'), '\n$', '', 'g')
+let g:snips_email  = substitute(system('git config user.email'), '\n$', '', 'g')
 
 let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['rspec'] = 'rspec,ruby'
+
+" Command mappings
+source ~/.vim/mappings.vim
+" Filetype settings
+source ~/.vim/ftsettings.vim
