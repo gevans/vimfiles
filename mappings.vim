@@ -18,11 +18,14 @@ nmap <C-k> lbi:<Esc>E
 " Map Ctrl-L to hashrocket (=>)
 imap <C-l> <Space>=><Space>
 
+" Map solarized background toggle to F5
+call togglebg#map("<F5>")
+
 " Explorer mappings
 nnoremap <F1> :BufExplorer<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :TlistToggle<CR>
-nnoremap <F5> :GundoToggle<CR>
+"nnoremap <F5> :GundoToggle<CR>
 
 " thoughtbot/vim-rspec
 map <Leader>t :call RunCurrentSpecFile()<CR>
