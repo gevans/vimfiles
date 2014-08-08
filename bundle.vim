@@ -1,13 +1,15 @@
 " Color schemes
 Bundle 'altercation/vim-colors-solarized'
 
-" Syntaxes
+" Languages & syntaxes
 Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'honza/dockerfile.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'moll/vim-node'
+Bundle 'rodjek/vim-puppet'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
@@ -20,7 +22,6 @@ Bundle 'GutenYe/gem.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'godlygeek/tabular'
 Bundle 'jgdavey/tslime.vim'
-Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
 Bundle 'thoughtbot/vim-rspec'
@@ -34,4 +35,3 @@ Bundle 'tpope/vim-surround'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim'
-
