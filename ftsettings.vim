@@ -4,6 +4,9 @@ autocmd Filetype svn,*commit* set spell
 " PHP - 4-space, expanded
 autocmd Filetype php setlocal ts=4 sw=4 softtabstop=4 expandtab
 
+" Make - 2-space, tabbed
+autocmd Filetype make setlocal ts=2 sw=2 softtabstop=2 noexpandtab
+
 " Go - 2-space, tabbed
 autocmd Filetype go setlocal ts=2 sw=2 softtabstop=2 noexpandtab
 
