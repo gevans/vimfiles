@@ -28,5 +28,4 @@ autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 autocmd BufnewFile,BufRead *.slim    set ft=slim
 
 " Auto-format *.go source
-let g:gofmt_command = "goimports"
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
+let g:go_fmt_command = "goimports"

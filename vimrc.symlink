@@ -1,34 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle
-"""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Deactivate ftdetect temporarily
-filetype off
-
-" Load vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Let vundle manage vundle
-Bundle 'gmarik/vundle'
-
-" Load bundled scripts, plugins, and syntaxes
-source ~/.vim/bundle.vim
-
-" Load golang vim files if $GOROOT is available
-if !empty('$GOROOT')
-  set rtp+=$GOROOT/misc/vim/
-end
-
-" Reactivate ftdetect
-filetype plugin indent on
-
-"""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-" Disable Vi compatibility
-set nocompatible
+" Load Vundle.vim plugin and definitions
+source ~/.vim/bundle.vim
 
 " Disable backups
 set nobackup nowb noswapfile
@@ -36,6 +11,13 @@ set nobackup nowb noswapfile
 " Allow backspacing over start of insert
 " See http://vimdoc.sourceforge.net/htmldoc/options.html#'backspace'
 set backspace=2
+
+" Enable persistent undo
+" See http://amix.dk/blog/post/19548
+set undodir=$HOME/.vim/undo
+set undofile
+set undolevels=1000
+set undoreload=10000
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors, fonts, and aethetics
@@ -56,8 +38,6 @@ set t_Co=256
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-
-syntax on
 
 " Line numbering
 set number
@@ -89,6 +69,7 @@ let g:snips_email  = substitute(system('git config user.email'), '\n$', '', 'g')
 
 let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['ginkgo'] = 'ginkgo,go'
 let g:snipMate.scope_aliases['rspec'] = 'rspec,ruby'
 
 " Command mappings
