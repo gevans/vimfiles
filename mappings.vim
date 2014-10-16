@@ -34,3 +34,5 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+au FileType go map <leader>r :!go run %<CR>
