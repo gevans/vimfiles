@@ -35,10 +35,12 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yaml.vim'
+Plugin 'yosssi/vim-ace'
 
 " Plugins
 Plugin 'GutenYe/gem.vim'
 Plugin 'Raimondi/delimitMate'
+Plugin 'benmills/vim-golang-alternate'
 Plugin 'gevans/vim-ginkgo'
 Plugin 'godlygeek/tabular'
 Plugin 'jgdavey/tslime.vim'
