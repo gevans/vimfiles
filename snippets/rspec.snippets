@@ -26,20 +26,24 @@ snippet subj
 	subject(:${1:target}) do
 		${2}
 	end
-snippet before
+snippet b
 	before(:${1:each}) do
 		${2}
 	end
-snippet after
+snippet a
 	after(:${1:each}) do
 		${2}
 	end
-snippet it
-	it { should${1} }
 snippet it-
+	it { is_expected.to ${1} }
+snippet it
 	it '${1:does something}' do
 		${2:pending}
 	end
+snippet ex
+	expect(${1:subject}).to ${2}
+snippet nex
+	expect(${1:subject}).not_to ${2}
 snippet its
 	its(:${1:attr}) { should${2} }
 snippet feat
