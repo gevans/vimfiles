@@ -56,8 +56,16 @@ set wrap
 " Draw ruler
 set colorcolumn=80
 
+" Selectively strip trailing whitespace. See http://stackoverflow.com/a/6496995
+fun! StripTrailingWhitespace()
+  if &ft =~ 'gitcommit'
+    return
+  endif
+  %s/\s\+$//e
+endfun
+
 " Delete trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * call StripTrailingWhitespace()
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous
