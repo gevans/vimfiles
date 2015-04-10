@@ -27,5 +27,9 @@ autocmd BufNewFile,BufRead *.json    set ft=javascript
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 autocmd BufnewFile,BufRead *.slim    set ft=slim
 
+" Buildroot config files
+autocmd BufnewFile,BufRead Config.in set ft=kconfig
+autocmd Filetype kconfig setlocal ts=2 sw=2 softtabstop=2 noexpandtab
+
 " Auto-format *.go source
 let g:go_fmt_command = "goimports"
