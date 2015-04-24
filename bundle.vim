@@ -21,6 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 " Languages & syntaxes
 Plugin 'Keithbsmiley/rspec.vim'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'fatih/vim-go'
 Plugin 'groenewege/vim-less'
