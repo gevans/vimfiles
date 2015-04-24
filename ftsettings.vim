@@ -29,6 +29,7 @@ autocmd BufnewFile,BufRead *.slim    set ft=slim
 
 " Buildroot config files
 autocmd BufnewFile,BufRead Config.in set ft=kconfig
+autocmd BufnewFile,BufRead Config.in.host set ft=kconfig
 autocmd Filetype kconfig setlocal ts=2 sw=2 softtabstop=2 noexpandtab
 
 " Auto-format *.go source
