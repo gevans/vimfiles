@@ -39,3 +39,8 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 nnoremap <Leader>q :Bdelete<CR>
 
 au FileType go map <leader>r :!go run %<CR>
+
+" Same bindings for merging diffs as in normal mode
+" https://www.reddit.com/r/vim/comments/21f4gm/best_workflow_when_using_fugitive/cgcpcgh
+xnoremap dp :diffput<cr>
+xnoremap do :diffget<cr>
