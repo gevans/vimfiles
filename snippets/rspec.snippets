@@ -8,15 +8,15 @@ snippet railshelper
 
 snippet desc
 	describe ${1:Class} do
-		${2:pending}
+		${0}
 	end
 snippet des
 	describe '${1:something}' do
-		${2:pending}
+		${0}
 	end
 snippet con
 	context '${1:something}' do
-		${2:pending}
+		${0}
 	end
 snippet let
 	let(:${1:target}) do
@@ -38,18 +38,15 @@ snippet it-
 	it { is_expected.to ${1} }
 snippet it
 	it '${1:does something}' do
-		${2:pending}
+		${0}
 	end
 snippet ex
 	expect(${1:subject}).to ${2}
 snippet nex
 	expect(${1:subject}).not_to ${2}
-snippet its
-	its(:${1:attr}) { should${2} }
 snippet feat
 	feature '${1:Growing money on trees}' do
-
-		${2:pending}
+		${0}
 	end
 snippet back
 	background do
@@ -57,7 +54,7 @@ snippet back
 	end
 snippet scen
 	scenario '${1:I forget to water my tree}' do
-		${2:expect(tree).to die}
+		${0}
 	end
 snippet given
 	given(:${1:target}) do
