@@ -35,7 +35,7 @@ set t_Co=256
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 " Default indent settings
-set noexpandtab
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
