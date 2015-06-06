@@ -85,3 +85,5 @@ let g:snipMate.scope_aliases['rspec'] = 'rspec,ruby'
 source ~/.vim/mappings.vim
 " Filetype settings
 source ~/.vim/ftsettings.vim
+
+source ~/.vim/projections.vim
