@@ -30,6 +30,7 @@ Plugin 'honza/dockerfile.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'moll/vim-node'
 Plugin 'mxw/vim-jsx'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
 Plugin 'slim-template/vim-slim'
