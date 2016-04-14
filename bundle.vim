@@ -34,6 +34,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
+Plugin 'rust-lang/rust.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-cucumber'
 Plugin 'tpope/vim-haml'
