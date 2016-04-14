@@ -1,3 +1,10 @@
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
 let g:rails_gem_projections = {
 	\ "active_model_serializers": {
 		\ "app/serializers/*_serializer.rb": {
