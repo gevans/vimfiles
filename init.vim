@@ -2,8 +2,13 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""
 
+if $VIMHOME == ''
+  " Default to the absolute path to the vimfiles root.
+  let $VIMHOME=fnamemodify(resolve(expand('<sfile>:p')), ':h')
+endif
+
 " Load Vundle.vim plugin and definitions
-source ~/.vim/bundle.vim
+source $VIMHOME/bundle.vim
 
 " Disable backups
 set nobackup nowb noswapfile
@@ -14,7 +19,7 @@ set backspace=2
 
 " Enable persistent undo
 " See http://amix.dk/blog/post/19548
-set undodir=$HOME/.vim/undo
+set undodir=$VIMHOME/undo
 set undofile
 set undolevels=1000
 set undoreload=10000
@@ -82,8 +87,8 @@ let g:snipMate.scope_aliases['ginkgo'] = 'ginkgo,go'
 let g:snipMate.scope_aliases['rspec'] = 'rspec,ruby'
 
 " Command mappings
-source ~/.vim/mappings.vim
+source $VIMHOME/mappings.vim
 " Filetype settings
-source ~/.vim/ftsettings.vim
+source $VIMHOME/ftsettings.vim
 
-source ~/.vim/projections.vim
+source $VIMHOME/projections.vim
