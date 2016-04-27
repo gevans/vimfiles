@@ -6,8 +6,8 @@ set nocompatible
 filetype off
 
 " Initialize Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=$VIMHOME/bundle/Vundle.vim
+call vundle#begin('$VIMHOME/bundle')
 
 " Let Vundle manage Vundle
 Bundle 'VundleVim/Vundle.vim'
